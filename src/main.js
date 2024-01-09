@@ -1,5 +1,7 @@
 const { welcome, goodbye, tell } = require("../utils/fortune-teller");
 
-const promise = welcome();
+const question = "What is the meaning of life?";
 
-console.log(promise);
+const promise = tell(question);
+
+promise.then(console.log);
